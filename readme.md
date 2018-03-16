@@ -21,8 +21,27 @@ Information about the Intel® RealSense™ technology at [realsense.intel.com](h
 
 > :open_file_folder: Don't have access to a RealSense camera? Check-out [sample data](./doc/sample-data.md)
 
+<<<<<<< master
 ## Download and Install
 * **Download** - The latest releases including the Intel RealSense SDK, Viewer and Depth Quality tools are available at: [**latest releases**](https://github.com/IntelRealSense/librealsense/releases). Please check the [**release notes**](https://github.com/IntelRealSense/librealsense/wiki/Release-Notes) for the supported platforms, new features and capabilities, known issues, how to upgrade the Firmware and more.
+=======
+## What’s included in the SDK:
+**[Tools for harnessing your depth camera’s capabilities](./tools)** Including:
+
+- **[Intel® RealSense™ Viewer](./tools/realsense-viewer)**
+   With this application, you can quickly access your Intel® RealSense™ Depth Camera to view the depth stream, visualize point clouds, record and playback streams, configure your camera settings and much more.
+
+- **[Depth Quality Tool](./tools/depth-quality)**
+   This application allows you to test the camera’s depth quality, including: standard deviation from plane fit, normalized RMS – the subpixel accuracy, distance accuracy and fill rate. You should be able to easily get and interpret several of the depth quality metrics and record and save the data for offline analysis.
+   
+ - **[Other Debug Tools](./tools/)** as can be seen in the tools directory
+
+**[Code Samples to Start Prototyping Quickly](./examples)**
+   These simple examples demonstrate how to easily use the SDK to include code snippets that access the camera into your applications.
+
+**[Wrappers](https://github.com/IntelRealSense/librealsense/tree/development/wrappers)**
+  We provide a C, C++, [Python](./wrappers/python), [.NET](./wrappers/csharp), [Node.js](./wrappers/nodejs) API, as well as integration with the following 3rd-party technologies: [ROS](https://github.com/intel-ros/realsense/releases), [LabVIEW](./wrappers/labview), [OpenCV](./wrappers/opencv), [PCL](./wrappers/pcl), [Unity](./wrappers/unity), and more to come, including Unity and Matlab.
+>>>>>>> 60c60df
 
 * **Install** - You can also install or build from source the SDK (on [Linux](./doc/distribution_linux.md) \ [Windows](./doc/distribution_windows.md) \ [Mac OS](doc/installation_osx.md)), connect your D400 depth camera and you are ready to start writing your first application.
 
