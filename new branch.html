@@ -1,0 +1,1783 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-6caac13806331f9675860df98a99b39a.css" />
+  <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-c4d5af25254cfc8bb30ae5cb6f074c97.css" />
+  
+  
+  <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://assets-cdn.github.com/assets/site-83dc1f7ebc9c7461fe1eab799b56c4c4.css" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>[TypeScript] [DialogActions] DialogActionsProps missing disableActionSpacing · Issue #10668 · mui-org/material-ui · GitHub</title>
+    <meta name="description" content="GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/6864500?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="[TypeScript] [DialogActions] DialogActionsProps missing disableActionSpacing · Issue #10668 · mui-org/material-ui" /><meta property="og:url" content="https://github.com/mui-org/material-ui/issues/10668" /><meta property="og:description" content="error TS2339: Property &amp;#39;disableActionSpacing&amp;#39; does not exist on type &amp;#39;IntrinsicAttributes &amp;amp; DialogActionsProps &amp;amp; { children?: ReactNode; }&amp;#39;.
+
+ I have searched the issues of ..." />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="EC89:2D52:12E0C19:2295898:5AAB89AD" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="EC89:2D52:12E0C19:2295898:5AAB89AD" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" />
+<meta name="hydro-events-url" content="https://github.com/hydro_browser_events" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/issues/show" data-pjax-transient="true" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NGZkNWJjODEyODJjNWMyMjUwZGE4ZmI3MzMzYmIzNWZiYjU5NDVlYzgwMzllNjRjNDU5NGEyMmVlMWI2MDg3ZXx7InJlbW90ZV9hZGRyZXNzIjoiOTYuMzUuNi4xNDMiLCJyZXF1ZXN0X2lkIjoiRUM4OToyRDUyOjEyRTBDMTk6MjI5NTg5ODo1QUFCODlBRCIsInRpbWVzdGFtcCI6MTUyMTE5MTM0MiwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES">
+
+  <meta name="html-safe-nonce" content="3a02a93b970792ef5510303d8bfa78795deab659">
+
+  <meta http-equiv="x-pjax-version" content="7524d712737433494c84e5354fea1ca5">
+  
+
+      <link href="https://github.com/mui-org/material-ui/commits/v1-beta.atom" rel="alternate" title="Recent Commits to material-ui:v1-beta" type="application/atom+xml">
+
+  <meta name="description" content="material-ui - React components that implement Google&#39;s Material Design.">
+  <meta name="go-import" content="github.com/mui-org/material-ui git https://github.com/mui-org/material-ui.git">
+
+  <meta name="octolytics-dimension-user_id" content="33663932" /><meta name="octolytics-dimension-user_login" content="mui-org" /><meta name="octolytics-dimension-repository_id" content="23083156" /><meta name="octolytics-dimension-repository_nwo" content="mui-org/material-ui" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="23083156" /><meta name="octolytics-dimension-repository_network_root_nwo" content="mui-org/material-ui" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+<link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
+        <nav class="mt-0">
+          <ul class="d-flex list-style-none">
+              <li class="ml-2">
+                <a class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features" href="/features">
+                  Features
+</a>              </li>
+              <li class="ml-4">
+                <a class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business" href="/business">
+                  Business
+</a>              </li>
+
+              <li class="ml-4">
+                <a class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+                  Explore
+</a>              </li>
+
+              <li class="ml-4">
+                    <a class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace" href="/marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-4">
+                <a class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing" href="/pricing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex">
+          <div class="d-lg-flex flex-items-center mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scoped-search-url="/mui-org/material-ui/search" data-unscoped-search-url="/search" action="/mui-org/material-ui/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a class="header-search-scope no-underline" href="/mui-org/material-ui/issues/10668">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+          </div>
+
+        <span class="d-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="/login?return_to=%2Fmui-org%2Fmaterial-ui%2Fissues%2F10668" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main"
+      class="application-main "
+      >
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+<style type="text/css" media="screen" id="issue-labels-style">
+  span.labelstyle-0052cc, .linked-labelstyle-0052cc {  background-color: #0052cc !important;  color: #ffffff !important;}.labelstyle-0052cc.selected {  background-color: #0052cc !important;  color: #ffffff !important;}.label-select-menu .labelstyle-0052cc.selected {  background: rgba(0, 82, 204, 0.12) !important;  color: #003d99 !important;}
+
+span.labelstyle-A33CD6, .linked-labelstyle-A33CD6 {  background-color: #A33CD6 !important;  color: #ffffff !important;}.labelstyle-A33CD6.selected {  background-color: #A33CD6 !important;  color: #ffffff !important;}.label-select-menu .labelstyle-A33CD6.selected {  background: rgba(163, 60, 214, 0.12) !important;  color: #742a99 !important;}
+
+span.labelstyle-e11d21, .linked-labelstyle-e11d21 {  background-color: #e11d21 !important;  color: #ffffff !important;}.labelstyle-e11d21.selected {  background-color: #e11d21 !important;  color: #ffffff !important;}.label-select-menu .labelstyle-e11d21.selected {  background: rgba(225, 29, 33, 0.12) !important;  color: #991316 !important;}
+
+span.labelstyle-ffffff, .linked-labelstyle-ffffff {  background-color: #ffffff !important;  color: #000000 !important;}.labelstyle-ffffff.selected {  background-color: #ffffff !important;  color: #000000 !important;}.label-select-menu .labelstyle-ffffff.selected {  background: rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-FFFFFF, .linked-labelstyle-FFFFFF {  background-color: #FFFFFF !important;  color: #000000 !important;}.labelstyle-FFFFFF.selected {  background-color: #FFFFFF !important;  color: #000000 !important;}.label-select-menu .labelstyle-FFFFFF.selected {  background: rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-5c72c9, .linked-labelstyle-5c72c9 {  background-color: #5c72c9 !important;  color: #000000 !important;}.labelstyle-5c72c9.selected {  background-color: #5c72c9 !important;  color: #000000 !important;}.label-select-menu .labelstyle-5c72c9.selected {  background: rgba(92, 114, 201, 0.12) !important;  color: #465699 !important;}
+
+span.labelstyle-bfdadc, .linked-labelstyle-bfdadc {  background-color: #bfdadc !important;  color: #000000 !important;}.labelstyle-bfdadc.selected {  background-color: #bfdadc !important;  color: #000000 !important;}.label-select-menu .labelstyle-bfdadc.selected {  background: rgba(191, 218, 220, 0.12) !important;  color: #849799 !important;}
+
+span.labelstyle-fbca04, .linked-labelstyle-fbca04 {  background-color: #fbca04 !important;  color: #000000 !important;}.labelstyle-fbca04.selected {  background-color: #fbca04 !important;  color: #000000 !important;}.label-select-menu .labelstyle-fbca04.selected {  background: rgba(251, 202, 4, 0.12) !important;  color: #997b02 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #000000 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #000000 !important;}.label-select-menu .labelstyle-cccccc.selected {  background: rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-c7def8, .linked-labelstyle-c7def8 {  background-color: #c7def8 !important;  color: #000000 !important;}.labelstyle-c7def8.selected {  background-color: #c7def8 !important;  color: #000000 !important;}.label-select-menu .labelstyle-c7def8.selected {  background: rgba(199, 222, 248, 0.12) !important;  color: #7a8898 !important;}
+
+span.labelstyle-db81be, .linked-labelstyle-db81be {  background-color: #db81be !important;  color: #000000 !important;}.labelstyle-db81be.selected {  background-color: #db81be !important;  color: #000000 !important;}.label-select-menu .labelstyle-db81be.selected {  background: rgba(219, 129, 190, 0.12) !important;  color: #995a84 !important;}
+
+span.labelstyle-a11d21, .linked-labelstyle-a11d21 {  background-color: #a11d21 !important;  color: #ffffff !important;}.labelstyle-a11d21.selected {  background-color: #a11d21 !important;  color: #ffffff !important;}.label-select-menu .labelstyle-a11d21.selected {  background: rgba(161, 29, 33, 0.12) !important;  color: #991b1f !important;}
+
+span.labelstyle-006b75, .linked-labelstyle-006b75 {  background-color: #006b75 !important;  color: #ffffff !important;}.labelstyle-006b75.selected {  background-color: #006b75 !important;  color: #ffffff !important;}.label-select-menu .labelstyle-006b75.selected {  background: rgba(0, 107, 117, 0.12) !important;  color: #008b99 !important;}
+
+span.labelstyle-c2e0c6, .linked-labelstyle-c2e0c6 {  background-color: #c2e0c6 !important;  color: #000000 !important;}.labelstyle-c2e0c6.selected {  background-color: #c2e0c6 !important;  color: #000000 !important;}.label-select-menu .labelstyle-c2e0c6.selected {  background: rgba(194, 224, 198, 0.12) !important;  color: #849987 !important;}
+
+span.labelstyle-ededed, .linked-labelstyle-ededed {  background-color: #ededed !important;  color: #000000 !important;}.labelstyle-ededed.selected {  background-color: #ededed !important;  color: #000000 !important;}.label-select-menu .labelstyle-ededed.selected {  background: rgba(237, 237, 237, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-8ceef2, .linked-labelstyle-8ceef2 {  background-color: #8ceef2 !important;  color: #000000 !important;}.labelstyle-8ceef2.selected {  background-color: #8ceef2 !important;  color: #000000 !important;}.label-select-menu .labelstyle-8ceef2.selected {  background: rgba(140, 238, 242, 0.12) !important;  color: #589699 !important;}
+
+span.labelstyle-5319e7, .linked-labelstyle-5319e7 {  background-color: #5319e7 !important;  color: #ffffff !important;}.labelstyle-5319e7.selected {  background-color: #5319e7 !important;  color: #ffffff !important;}.label-select-menu .labelstyle-5319e7.selected {  background: rgba(83, 25, 231, 0.12) !important;  color: #361099 !important;}
+
+span.labelstyle-eb6420, .linked-labelstyle-eb6420 {  background-color: #eb6420 !important;  color: #000000 !important;}.labelstyle-eb6420.selected {  background-color: #eb6420 !important;  color: #000000 !important;}.label-select-menu .labelstyle-eb6420.selected {  background: rgba(235, 100, 32, 0.12) !important;  color: #994114 !important;}
+
+span.labelstyle-009800, .linked-labelstyle-009800 {  background-color: #009800 !important;  color: #000000 !important;}.labelstyle-009800.selected {  background-color: #009800 !important;  color: #000000 !important;}.label-select-menu .labelstyle-009800.selected {  background: rgba(0, 152, 0, 0.12) !important;  color: #009900 !important;}
+
+span.labelstyle-ff9933, .linked-labelstyle-ff9933 {  background-color: #ff9933 !important;  color: #000000 !important;}.labelstyle-ff9933.selected {  background-color: #ff9933 !important;  color: #000000 !important;}.label-select-menu .labelstyle-ff9933.selected {  background: rgba(255, 153, 51, 0.12) !important;  color: #995b1e !important;}
+
+span.labelstyle-bfe5bf, .linked-labelstyle-bfe5bf {  background-color: #bfe5bf !important;  color: #000000 !important;}.labelstyle-bfe5bf.selected {  background-color: #bfe5bf !important;  color: #000000 !important;}.label-select-menu .labelstyle-bfe5bf.selected {  background: rgba(191, 229, 191, 0.12) !important;  color: #7f997f !important;}
+
+span.labelstyle-bb7704, .linked-labelstyle-bb7704 {  background-color: #bb7704 !important;  color: #000000 !important;}.labelstyle-bb7704.selected {  background-color: #bb7704 !important;  color: #000000 !important;}.label-select-menu .labelstyle-bb7704.selected {  background: rgba(187, 119, 4, 0.12) !important;  color: #996103 !important;}
+
+span.labelstyle-e57c37, .linked-labelstyle-e57c37 {  background-color: #e57c37 !important;  color: #000000 !important;}.labelstyle-e57c37.selected {  background-color: #e57c37 !important;  color: #000000 !important;}.label-select-menu .labelstyle-e57c37.selected {  background: rgba(229, 124, 55, 0.12) !important;  color: #995224 !important;}
+
+span.labelstyle-8ADD6D, .linked-labelstyle-8ADD6D {  background-color: #8ADD6D !important;  color: #000000 !important;}.labelstyle-8ADD6D.selected {  background-color: #8ADD6D !important;  color: #000000 !important;}.label-select-menu .labelstyle-8ADD6D.selected {  background: rgba(138, 221, 109, 0.12) !important;  color: #5f994b !important;}
+
+span.labelstyle-1a1a1a, .linked-labelstyle-1a1a1a {  background-color: #1a1a1a !important;  color: #ffffff !important;}.labelstyle-1a1a1a.selected {  background-color: #1a1a1a !important;  color: #ffffff !important;}.label-select-menu .labelstyle-1a1a1a.selected {  background: rgba(26, 26, 26, 0.4018898823529412) !important;  color: #666666 !important;}
+
+span.labelstyle-55bdd4, .linked-labelstyle-55bdd4 {  background-color: #55bdd4 !important;  color: #000000 !important;}.labelstyle-55bdd4.selected {  background-color: #55bdd4 !important;  color: #000000 !important;}.label-select-menu .labelstyle-55bdd4.selected {  background: rgba(85, 189, 212, 0.12) !important;  color: #3d8899 !important;}
+
+span.labelstyle-3b96f4, .linked-labelstyle-3b96f4 {  background-color: #3b96f4 !important;  color: #000000 !important;}.labelstyle-3b96f4.selected {  background-color: #3b96f4 !important;  color: #000000 !important;}.label-select-menu .labelstyle-3b96f4.selected {  background: rgba(59, 150, 244, 0.12) !important;  color: #245e99 !important;}
+
+span.labelstyle-e99695, .linked-labelstyle-e99695 {  background-color: #e99695 !important;  color: #000000 !important;}.labelstyle-e99695.selected {  background-color: #e99695 !important;  color: #000000 !important;}.label-select-menu .labelstyle-e99695.selected {  background: rgba(233, 150, 149, 0.12) !important;  color: #986261 !important;}
+</style>
+
+
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+      <a href="/login?return_to=%2Fmui-org%2Fmaterial-ui"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/mui-org/material-ui/watchers"
+     aria-label="1189 users are watching this repository">
+    1,189
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fmui-org%2Fmaterial-ui"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/mui-org/material-ui/stargazers"
+      aria-label="34022 users starred this repository">
+      34,022
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fmui-org%2Fmaterial-ui"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/mui-org/material-ui/network" class="social-count"
+       aria-label="6223 users forked this repository">
+      6,223
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" href="/mui-org">mui-org</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/mui-org/material-ui">material-ui</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item reponav-item" itemprop="url" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /mui-org/material-ui" href="/mui-org/material-ui">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item selected reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /mui-org/material-ui/issues" href="/mui-org/material-ui/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">135</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /mui-org/material-ui/pulls" href="/mui-org/material-ui/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">9</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+
+
+  <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /mui-org/material-ui/pulse" href="/mui-org/material-ui/pulse">
+    <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <div class="issues-listing" data-pjax>
+    
+      <div class="signup-prompt-bg rounded-1">
+      <div class="signup-prompt p-4 text-center mb-4 rounded-1">
+        <div class="position-relative">
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/site/dismiss_signup_prompt" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="FKto3UgY6xDHkEouVBUl0+xzqgTCliRgLncuNSvq/HxQA7vOrs+HVRWSrRMzFzdfwhkYq4oIexP5/S2o/ZyXCA==" />
+            <button type="submit" class="position-absolute top-0 right-0 btn-link link-gray" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
+              Dismiss
+            </button>
+</form>
+          <h3 class="pt-2">Join GitHub today</h3>
+          <p class="col-6 mx-auto">GitHub is home to over 20 million developers working together to host and review code, manage projects, and build software together.</p>
+          <p class="pb-2">
+            <a class="btn btn-blue" href="/join?source=prompt-issue-show" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container Details js-socket-channel js-updatable-content issue"
+    data-channel="issue:305636173"
+    data-url="/mui-org/material-ui/issues/10668/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+
+          <button type="button" data-facebox="#new_issue_modal" class="btn btn-sm btn-primary float-right" data-hotkey="c" aria-haspopup="true" data-ga-click="Issues, create new issue, view:issue_show location:issue_header style:button logged_in:false">New issue</button>
+          <div id="new_issue_modal" style="display:none;">
+  <div class="mt-3 mb-2 text-center">
+    <svg height="60" class="octicon octicon-comment-discussion text-blue" viewBox="0 0 16 16" version="1.1" width="60" aria-hidden="true"><path fill-rule="evenodd" d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z"/></svg>
+  </div>
+
+  <div class="px-4">
+    <p class="text-center mb-4">
+      <strong>Have a question about this project?</strong> Sign up for a free GitHub account to open an issue and contact its maintainers and the community.
+    </p>
+
+    <form class="js-signup-form" autocomplete="off" action="/join?return_to=%2Fmui-org%2Fmaterial-ui%2Fissues%2Fnew" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="14267Ukr7A+Wq1DJeASRDONh/pcoAwB0S+IN9tt6lI4oNS/7KL6IQdIjyF/YWm4qlLWdrcm2OBM9yt2xf5RH5w==" />      <auto-check src='/signup_check/username' csrf="fIMqxmlyqkn0w2ZtTtdAoUuFj8SgR3iFXkdsdFiKiC6ok09Q0bV7erRtUTFhL3hd0cgsH0xxNbYGLPSBcGHu+w==">
+        <dl class="form-group"><dt class="input-label"><label name="user[login]" data-facebox-id="user-login-issues" autocapitalize="off" autofocus="autofocus" for="user_login_issues">Pick a username</label></dt><dd><input name="user[login]" data-facebox-id="user-login-issues" autocapitalize="off" autofocus="autofocus" class="form-control" type="text" id="user_login_issues" /></dd></dl>
+      </auto-check>
+
+      <auto-check src='/signup_check/email' csrf="MxgnYiU5Aj8iBcAWZ0rFq1+H1vu3Vq8z991U23eir0bB1kDX+q5bR2QIGRiTzlGe96QOMvH5hFT4Li9+JSl3ww==">
+        <dl class="form-group"><dt class="input-label"><label name="user[email]" data-facebox-id="user-email-issues" autocapitalize="off" for="user_email_issues">Email Address</label></dt><dd><input name="user[email]" data-facebox-id="user-email-issues" autocapitalize="off" class="form-control" type="text" id="user_email_issues" /></dd></dl>
+      </auto-check>
+
+      <auto-check src='/signup_check/password' csrf="WQmacAc01N6Lq2D3JqOhaT4StdKbGhSlvbHj+5T01ZTi0hs6VtBkzb0kGRzbu9Ybnlv325i0oGiwyCXrh2KsQg==">
+        <dl class="form-group"><dt class="input-label"><label name="user[password]" data-facebox-id="user-password-issues" for="user_password_issues">Password</label></dt><dd><input name="user[password]" data-facebox-id="user-password-issues" class="form-control" type="password" id="user_password_issues" /></dd></dl>
+      </auto-check>
+
+      <input type="hidden" name="source" class="js-signup-source" value="modal-issues">
+      <input type="text" name="required_field_a23b" id="required_field_a23b" style="display: none" class="form-control" />
+<input type="hidden" name="timestamp" value="1521191341970" class="form-control" />
+<input type="hidden" name="timestamp_secret" value="ffff85bd63438dd9325792590a9fad60035ea164d44097d3e623f4eb3ae31a8d" class="form-control" />
+
+
+      <button class="btn btn-primary mt-2 btn-block" type="submit" data-ga-click="(Logged out) New issue modal, clicked Sign up, text:sign-up">Sign up for GitHub</button>
+</form>
+    <p class="mt-4 text-gray text-center">Already on GitHub? <a href="/login?return_to=%2Fmui-org%2Fmaterial-ui%2Fissues%2Fnew" data-ga-click="(Logged out) New issue modal, clicked Sign in, text:sign-in">Sign in</a> to your account</p>
+  </div>
+</div>
+
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">
+        [TypeScript] [DialogActions] DialogActionsProps missing disableActionSpacing
+      </span>
+      <span class="gh-header-number">#10668</span>
+    </h1>
+  </div>
+
+
+  <div class="TableObject gh-header-meta">
+    <div class="TableObject-item">
+        <div class="State State--red">
+          <svg class="octicon octicon-issue-closed" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 10h2v2H7v-2zm2-6H7v5h2V4zm1.5 1.5l-1 1L12 9l4-4.5-1-1L12 7l-1.5-1.5zM8 13.7A5.71 5.71 0 0 1 2.3 8c0-3.14 2.56-5.7 5.7-5.7 1.83 0 3.45.88 4.5 2.2l.92-.92A6.947 6.947 0 0 0 8 1C4.14 1 1 4.14 1 8s3.14 7 7 7 7-3.14 7-7l-1.52 1.52c-.66 2.41-2.86 4.19-5.48 4.19v-.01z"/></svg>
+          Closed
+        </div>
+    </div>
+    <div class="TableObject-item TableObject-item--primary">
+        <a class="author" href="/youngnicks">youngnicks</a>  opened this <span class="noun">Issue</span>
+        <relative-time datetime="2018-03-15T16:53:52Z">Mar 15, 2018</relative-time>
+        &middot; 5 comments
+    </div>
+  </div>
+</div>
+
+
+    <h2 class="sr-only">Comments</h2>
+    <div id="discussion_bucket" class="clearfix">
+      <div class="discussion-sidebar">
+        <div id="partial-discussion-sidebar"
+  class="js-socket-channel js-updatable-content"
+  data-channel="issue:305636173"
+  data-url="/mui-org/material-ui/issues/10668/show_partial?partial=issues%2Fsidebar">
+
+
+
+  <div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-issue-sidebar-form" action="/mui-org/material-ui/issues/10668?partial=issues%2Fsidebar%2Fshow%2Fassignees" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="pOLW7CoVgf3kbNRUeaXJ7AzaTKftkhDCg+goVWeUOrUOgmz4+I4roUu2iumM44Hqt4WfWUwc/dIF+BIYvfvoWw==" />
+    
+
+  <div class="discussion-sidebar-heading text-bold">
+    Assignees
+  </div>
+
+    <span class="css-truncate">
+    No one assigned
+</span>
+
+</form></div>
+
+  <div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-issue-sidebar-form" action="/mui-org/material-ui/issues/10668?partial=issues%2Fsidebar%2Fshow%2Flabels" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="sqBErWXGQusHzKwWi9pfwPTvla1NjMMhzK6s7VW/knEYwP65t13ot6gW8qt+nBfGT7BGU+wCLjFKvpagj9BAnw==" />
+    <div class="js-issue-labels-container">
+      
+
+  <div class="discussion-sidebar-heading text-bold">
+    Labels
+  </div>
+
+
+    </div>
+    <div aria-live="polite" aria-label="Labels">
+      <div class="labels css-truncate">
+      <a class="sidebar-labels-style box-shadow-none width-full d-block IssueLabel v-align-text-top labelstyle-c2e0c6 linked-labelstyle-c2e0c6" style="background-color: #c2e0c6; color: #000000" title="good first issue" href="/mui-org/material-ui/labels/good%20first%20issue"><span class="css-truncate-target" style="max-width: 100%">good first issue</span></a>
+  <a class="sidebar-labels-style box-shadow-none width-full d-block IssueLabel v-align-text-top labelstyle-006b75 linked-labelstyle-006b75" style="background-color: #006b75; color: #ffffff" title="typescript" href="/mui-org/material-ui/labels/typescript"><span class="css-truncate-target" style="max-width: 100%">typescript</span></a>
+
+</div>
+
+    </div>
+</form></div>
+
+  <div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-issue-sidebar-form" data-remote="true" action="/mui-org/material-ui/issues/10668/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="e+xqHoKwOfxCkIgc5EaSMCf7NWVbQHIud26vJ0QmAR+UwaT8orvdjYS42mh7lTP3Onci3p1RIoXBm2NtuiRY5Q==" />
+    
+
+  <div class="discussion-sidebar-heading text-bold">
+    Milestone
+  </div>
+
+      No milestone
+
+</form></div>
+
+  
+  <div id="partial-users-participants" class="discussion-sidebar-item">
+  <div class="participation">
+
+    <div class="discussion-sidebar-heading text-bold">
+      3 participants
+    </div>
+    <div class="participation-avatars d-flex flex-wrap">
+        <a class="participant-avatar" href="/youngnicks">
+          <img class="avatar" src="https://avatars2.githubusercontent.com/u/6864500?s=52&amp;v=4" width="26" height="26" alt="@youngnicks" /> 
+        </a>
+        <a class="participant-avatar" href="/rsumner32">
+          <img class="avatar" src="https://avatars2.githubusercontent.com/u/37400784?s=52&amp;v=4" width="26" height="26" alt="@rsumner32" /> 
+        </a>
+        <a class="participant-avatar" href="/oliviertassinari">
+          <img class="avatar" src="https://avatars3.githubusercontent.com/u/3165635?s=52&amp;v=4" width="26" height="26" alt="@oliviertassinari" /> 
+        </a>
+    </div>
+  </div>
+</div>
+
+
+  
+
+</div>
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container ">
+
+        <div class="js-discussion js-socket-channel" data-channel="marked-as-read:issue:305636173">
+
+          <div class="timeline-comment-wrapper js-comment-container mt-0">
+            
+
+<div class="avatar-parent-child timeline-comment-avatar">
+    <a href="/youngnicks">
+      <img class="avatar rounded-1" height="44" width="44" alt="@youngnicks" src="https://avatars1.githubusercontent.com/u/6864500?s=88&amp;v=4" />
+    </a>
+
+</div>
+
+
+            
+<div class="js-minimizable-comment-group">
+  <div id="issue-305636173"
+       class="unminimized-comment comment previewable-edit js-comment js-task-list-container timeline-comment  "
+       data-body-version="43d7dbcb1f4eab7fd29c9ff03f5cf17e">
+
+    
+<div class="timeline-comment-header clearfix">
+  <div class="timeline-comment-actions">
+    
+
+
+
+
+
+
+
+<!-- Closes div if we are showing the kebab menu -->
+
+  </div>
+
+    
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has previously committed to the material-ui repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+    <strong>
+      
+
+  <a href="/youngnicks" class="author text-inherit">youngnicks</a>
+  
+
+    </strong>
+
+    commented
+
+    <a href="#issue-305636173" class="timestamp"><relative-time datetime="2018-03-15T16:53:52Z">Mar 15, 2018</relative-time></a>
+
+
+      
+  <span class="d-inline-block text-gray-light">&#8226;</span>
+
+
+  <div class="d-inline-block dropdown js-menu-container js-select-menu">
+    <button class="btn-link no-underline text-gray dropdown-toggle js-menu-target" type="button" aria-expanded="false" aria-haspopup="true">
+        edited
+        <svg height="11" class="octicon octicon-triangle-down v-align-middle" viewBox="0 0 12 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M0 5l6 6 6-6z"/></svg>
+    </button>
+
+    <div class="dropdown-menu-content anim-scale-in js-menu-content">
+      <div class="dropdown-menu dropdown-menu-se py-0 overflow-hidden" style="width:272px">
+        <div class="dropdown-header px-3 py-2 border-bottom">Edited 2 times</div>
+        <ul class="bg-gray-light" style="overflow-y:auto; max-height:250px">
+          <li class="d-flex flex-justify-between border-bottom px-3 py-2 f6 css-truncate">
+              <a href="https://github.com/youngnicks" class="text-inherit no-underline">
+                <img src="https://avatars3.githubusercontent.com/u/6864500?v=4" width="20" height="20" class="avatar avatar-small v-align-middle" alt="@youngnicks">
+                <span class="css-truncate-target v-align-middle text-bold text-gray-dark">youngnicks </span>
+              </a>
+            <div><relative-time datetime="2018-03-15T22:49:59Z">Mar 15, 2018</relative-time></div>
+          </li>
+          <li class="d-flex flex-justify-between border-bottom px-3 py-2 f6 css-truncate">
+              <a href="https://github.com/youngnicks" class="text-inherit no-underline">
+                <img src="https://avatars3.githubusercontent.com/u/6864500?v=4" width="20" height="20" class="avatar avatar-small v-align-middle" alt="@youngnicks">
+                <span class="css-truncate-target v-align-middle text-bold text-gray-dark">youngnicks </span>
+              </a>
+            <div><relative-time datetime="2018-03-15T22:49:58Z">Mar 15, 2018</relative-time></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<table class="d-block">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>error TS2339: Property 'disableActionSpacing' does not exist on type 'IntrinsicAttributes &amp; DialogActionsProps &amp; { children?: ReactNode; }'.</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> I have searched the <a href="https://github.com/mui-org/material-ui/issues">issues</a> of this repository and believe that this is not a duplicate.</li>
+</ul>
+<h2>Expected Behavior</h2>
+<p>Code compiles without error.</p>
+<h2>Current Behavior</h2>
+<p>Compile throws error above.</p>
+<h2>Steps to Reproduce (for bugs)</h2>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">DialogActions</span> <span class="pl-e">disableActionSpacing</span>&gt;
+   ...
+&lt;/<span class="pl-ent">DialogActions</span></pre></div>
+<h2>Your Environment</h2>
+<table>
+<thead>
+<tr>
+<th>Tech</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Material-UI</td>
+<td>^1.0.0-beta.37</td>
+</tr>
+<tr>
+<td>React</td>
+<td>^16.2.0</td>
+</tr>
+<tr>
+<td>TypeScript</td>
+<td>^2.7.1</td>
+</tr></tbody></table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+        
+
+<div class="comment-reactions  js-reactions-container "
+
+    >
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+          </div>
+
+          
+
+
+  <div id="js-timeline-progressive-loader" data-timeline-item-src="mui-org/material-ui/timeline?id=MDU6SXNzdWUzMDU2MzYxNzM%3D&amp;variables%5Bafter%5D=Y3Vyc29yOnYyOpPPAAABYi4QXJgBqjE1MjUwNjExMzA%3D&amp;variables%5Bfirst%5D=80" ></div>
+
+
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDM3MzQ0ODQxNw==">
+    
+<div class="timeline-comment-wrapper js-comment-container">
+  
+
+<div class="avatar-parent-child timeline-comment-avatar">
+    <a href="/rsumner32">
+      <img class="avatar rounded-1" height="44" width="44" alt="@rsumner32" src="https://avatars1.githubusercontent.com/u/37400784?s=88&amp;v=4" />
+    </a>
+
+</div>
+
+
+  
+<div class="js-minimizable-comment-group">
+    <div class="minimized-comment d-none">
+      
+
+  <details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="d0e97a7d4a0a5eedec57089cd56f108a">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <span class="Details-content--closed text-gray f6"><svg class="octicon octicon-unfold position-relative mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"/></svg>Show comment</span>
+        <span class="Details-content--open text-gray f6"><svg class="octicon octicon-fold position-relative mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z"/></svg>Hide comment</span>
+      </div>
+    </summary>
+    <div class="border-top">
+      <div class="review-comment  previewable-edit js-comment js-task-list-container ">
+        <div class="edit-comment-hide">
+          <div class="timeline-comment-actions">
+
+
+          </div>
+            <a class="float-left mt-1" href="/rsumner32">
+              <img src="https://avatars2.githubusercontent.com/u/37400784?s=56&amp;v=4" width="28" height="28" alt="@rsumner32" class="avatar" />
+            </a>
+          <div class="review-comment-contents">
+            <h4 class="f5 text-normal d-inline text-gray-dark">
+              <strong class="text-gray">
+                
+
+  <a href="/rsumner32" class="author text-inherit">rsumner32</a>
+  
+
+              </strong>
+              <span class="text-gray">
+                  <relative-time datetime="2018-03-15T16:57:46Z">Mar 15, 2018</relative-time>
+              </span>
+            </h4>
+            
+
+            <div class="comment-body markdown-body p-0 pt-1 js-comment-body">
+                <p>Yes I believe your correct in the end compilation without error is the goal thanks appreciate it. If there’s any further dev or improve please let and likewise</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </details>
+
+    </div>
+  <div id="issuecomment-373448417"
+       class="unminimized-comment comment previewable-edit js-comment js-task-list-container timeline-comment  "
+       data-body-version="d0e97a7d4a0a5eedec57089cd56f108a">
+
+    
+<div class="timeline-comment-header clearfix">
+  <div class="timeline-comment-actions">
+    
+
+
+
+
+
+
+
+<!-- Closes div if we are showing the kebab menu -->
+
+  </div>
+
+    
+
+
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+    <strong>
+      
+
+  <a href="/rsumner32" class="author text-inherit">rsumner32</a>
+  
+
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-373448417" class="timestamp"><relative-time datetime="2018-03-15T16:57:46Z">Mar 15, 2018</relative-time></a>
+
+
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<table class="d-block">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Yes I believe your correct in the end compilation without error is the goal thanks appreciate it. If there’s any further dev or improve please let and likewise</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+        
+
+<div class="comment-reactions has-reactions js-reactions-container "
+
+    >
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-pick-reaction" action="/users/mui-org/reactions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="fxqx0KJvR6yFkPsHzC3QGmEb/RaxtPGyjgWTS8iYKtNlQohROzi+kbtCR3Wi05y5tfd/hh4LPOZKg8LxrcRZSw==" />
+      <input type="hidden" name="input[subjectId]" value="MDEyOklzc3VlQ29tbWVudDM3MzQ0ODQxNw==">
+
+      <div class="comment-reactions-options">
+          <button disabled
+                  class="btn-link reaction-summary-item tooltipped tooltipped-se tooltipped-multiline "
+                  name="input[content]"
+                  type="submit"
+                  value="THUMBS_UP react"
+                  aria-label="rsumner32 reacted with thumbs up emoji">
+            <g-emoji alias="+1" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" class="emoji mr-1">👍</g-emoji>
+            1
+          </button>
+      </div>
+</form></div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+</div>
+
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDM3MzQ0OTg2OA==">
+    
+<div class="timeline-comment-wrapper js-comment-container">
+  
+
+<div class="avatar-parent-child timeline-comment-avatar">
+    <a href="/youngnicks">
+      <img class="avatar rounded-1" height="44" width="44" alt="@youngnicks" src="https://avatars1.githubusercontent.com/u/6864500?s=88&amp;v=4" />
+    </a>
+
+</div>
+
+
+  
+<div class="js-minimizable-comment-group">
+    <div class="minimized-comment d-none">
+      
+
+  <details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="0e2341ea995dd53a7a36bbc163af3c3c">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <span class="Details-content--closed text-gray f6"><svg class="octicon octicon-unfold position-relative mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"/></svg>Show comment</span>
+        <span class="Details-content--open text-gray f6"><svg class="octicon octicon-fold position-relative mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z"/></svg>Hide comment</span>
+      </div>
+    </summary>
+    <div class="border-top">
+      <div class="review-comment  previewable-edit js-comment js-task-list-container ">
+        <div class="edit-comment-hide">
+          <div class="timeline-comment-actions">
+
+
+          </div>
+            <a class="float-left mt-1" href="/youngnicks">
+              <img src="https://avatars2.githubusercontent.com/u/6864500?s=56&amp;v=4" width="28" height="28" alt="@youngnicks" class="avatar" />
+            </a>
+          <div class="review-comment-contents">
+            <h4 class="f5 text-normal d-inline text-gray-dark">
+              <strong class="text-gray">
+                
+
+  <a href="/youngnicks" class="author text-inherit">youngnicks</a>
+  
+
+              </strong>
+              <span class="text-gray">
+                  <relative-time datetime="2018-03-15T17:01:57Z">Mar 15, 2018</relative-time>
+              </span>
+            </h4>
+            
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has previously committed to the material-ui repository.">
+      Contributor
+    </span>
+
+            <div class="comment-body markdown-body p-0 pt-1 js-comment-body">
+                <p>I can fix this and submit a pull request when I get home, but I believe the fix is to add <code>disableActionSpacing?: boolean;</code> to the interface.</p>
+<p><strong>DialogActions.d.ts</strong></p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">export</span> <span class="pl-smi">interface</span> <span class="pl-smi">DialogAction</span> <span class="pl-smi">Props</span> <span class="pl-smi">extends</span> ... {
+  <span class="pl-smi">disableActionSpacing</span>?: <span class="pl-smi">boolean</span>;
+}</pre></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </details>
+
+    </div>
+  <div id="issuecomment-373449868"
+       class="unminimized-comment comment previewable-edit js-comment js-task-list-container timeline-comment  "
+       data-body-version="0e2341ea995dd53a7a36bbc163af3c3c">
+
+    
+<div class="timeline-comment-header clearfix">
+  <div class="timeline-comment-actions">
+    
+
+
+
+
+
+
+
+<!-- Closes div if we are showing the kebab menu -->
+
+  </div>
+
+    
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has previously committed to the material-ui repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+    <strong>
+      
+
+  <a href="/youngnicks" class="author text-inherit">youngnicks</a>
+  
+
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-373449868" class="timestamp"><relative-time datetime="2018-03-15T17:01:57Z">Mar 15, 2018</relative-time></a>
+
+
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<table class="d-block">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>I can fix this and submit a pull request when I get home, but I believe the fix is to add <code>disableActionSpacing?: boolean;</code> to the interface.</p>
+<p><strong>DialogActions.d.ts</strong></p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">export</span> <span class="pl-smi">interface</span> <span class="pl-smi">DialogAction</span> <span class="pl-smi">Props</span> <span class="pl-smi">extends</span> ... {
+  <span class="pl-smi">disableActionSpacing</span>?: <span class="pl-smi">boolean</span>;
+}</pre></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+        
+
+<div class="comment-reactions has-reactions js-reactions-container "
+
+    >
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-pick-reaction" action="/users/mui-org/reactions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="UST+ePhSAeXP3JFi3rUA2Lc4nl5HsGR04JDQNznsl6ZLfMf5YQX42PEOLRCwS0x7Y9QczugPqSAkFoGNXLDkPg==" />
+      <input type="hidden" name="input[subjectId]" value="MDEyOklzc3VlQ29tbWVudDM3MzQ0OTg2OA==">
+
+      <div class="comment-reactions-options">
+          <button disabled
+                  class="btn-link reaction-summary-item tooltipped tooltipped-se tooltipped-multiline "
+                  name="input[content]"
+                  type="submit"
+                  value="THUMBS_UP react"
+                  aria-label="oliviertassinari and rsumner32 reacted with thumbs up emoji">
+            <g-emoji alias="+1" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" class="emoji mr-1">👍</g-emoji>
+            2
+          </button>
+      </div>
+</form></div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+</div>
+
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOkxhYmVsZWRFdmVudDE1MjM4Mzg3OTY=">
+      <div class="discussion-item discussion-item-labeled">
+  <h3 class="discussion-item-header f5 text-normal" id="event-1523838796">
+
+    <span class="discussion-item-icon">
+      <svg class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+    </span>
+
+    
+
+        <img src="https://avatars2.githubusercontent.com/u/3165635?s=32&amp;v=4" alt="@oliviertassinari" height="16" width="16" class="avatar">
+  <a href="/oliviertassinari" class="author">oliviertassinari</a>
+  
+
+
+      
+
+    added
+      
+<span class="IssueLabel d-inline-block v-align-middle " title="good first issue" style="background-color: #c2e0c6;">
+  <a class="lh-condensed-ultra" href="/mui-org/material-ui/labels/good%20first%20issue" style="color: #000000;">good first issue</a>
+</span>
+
+      
+<span class="IssueLabel d-inline-block v-align-middle " title="typescript" style="background-color: #006b75;">
+  <a class="lh-condensed-ultra" href="/mui-org/material-ui/labels/typescript" style="color: #ffffff;">typescript</a>
+</span>
+
+  labels
+
+
+    <a href="#event-1523838796" class="timestamp"><relative-time datetime="2018-03-15T17:14:47Z">Mar 15, 2018</relative-time></a>
+
+  </h3>
+</div>
+
+
+
+
+</div>
+
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDM3MzU0OTI3MQ==">
+    
+<div class="timeline-comment-wrapper js-comment-container">
+  
+
+<div class="avatar-parent-child timeline-comment-avatar">
+    <a href="/oliviertassinari">
+      <img class="avatar rounded-1" height="44" width="44" alt="@oliviertassinari" src="https://avatars0.githubusercontent.com/u/3165635?s=88&amp;v=4" />
+    </a>
+
+</div>
+
+
+  
+<div class="js-minimizable-comment-group">
+    <div class="minimized-comment d-none">
+      
+
+  <details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="9ee83e77d51c3914dfea054494517e54">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <span class="Details-content--closed text-gray f6"><svg class="octicon octicon-unfold position-relative mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"/></svg>Show comment</span>
+        <span class="Details-content--open text-gray f6"><svg class="octicon octicon-fold position-relative mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z"/></svg>Hide comment</span>
+      </div>
+    </summary>
+    <div class="border-top">
+      <div class="review-comment  previewable-edit js-comment js-task-list-container ">
+        <div class="edit-comment-hide">
+          <div class="timeline-comment-actions">
+
+
+          </div>
+            <a class="float-left mt-1" href="/oliviertassinari">
+              <img src="https://avatars3.githubusercontent.com/u/3165635?s=56&amp;v=4" width="28" height="28" alt="@oliviertassinari" class="avatar" />
+            </a>
+          <div class="review-comment-contents">
+            <h4 class="f5 text-normal d-inline text-gray-dark">
+              <strong class="text-gray">
+                
+
+  <a href="/oliviertassinari" class="author text-inherit">oliviertassinari</a>
+  
+
+              </strong>
+              <span class="text-gray">
+                  <relative-time datetime="2018-03-15T22:58:11Z">Mar 15, 2018</relative-time>
+              </span>
+            </h4>
+            
+    <span class="timeline-comment-label text-bold tooltipped tooltipped-multiline tooltipped-s" aria-label="This user is the owner of the material-ui repository.">
+      Owner
+    </span>
+
+            <div class="comment-body markdown-body p-0 pt-1 js-comment-body">
+                <p><a class="user-mention" href="https://github.com/youngnicks">@youngnicks</a> A pull-request is very welcome :). We need to update this line as you mentioned it:<br>
+<div class="border rounded-1 my-2">
+  <div class="f6 px-3 py-2 lh-condensed border-bottom bg-gray-light">
+    <p class="mb-0 text-bold">
+      <a href="https://github.com/mui-org/material-ui/blob/c70b518cca49d31d06da29da2a5ed42ff9fee255/src/Dialog/DialogActions.d.ts#L5">material-ui/src/Dialog/DialogActions.d.ts</a>
+    </p>
+    <p class="mb-0 text-gray-light">
+         Line 5
+      in
+      <a data-pjax="true" class="commit-tease-sha" href="/mui-org/material-ui/commit/c70b518cca49d31d06da29da2a5ed42ff9fee255">c70b518</a>
+    </p>
+    </div>
+    <div itemprop="text" class="blob-wrapper blob-wrapper-embedded data">
+    <table class="highlight tab-size mb-0 js-file-line-container" data-tab-size="8">
+
+        <tbody><tr class="border-0">
+          <td id="L5" class="blob-num border-0 px-3 py-0 bg-white js-line-number" data-line-number="5"></td>
+          <td id="LC5" class="blob-code border-0 px-3 py-0 bg-white blob-code-inner js-file-line"> <span class="pl-k">extends</span> <span class="pl-e">StandardProps</span>&lt;<span class="pl-en">React</span>.<span class="pl-en">HTMLAttributes</span>&lt;<span class="pl-en">HTMLDivElement</span>&gt;, <span class="pl-en">DialogActionsClassKey</span>&gt; {} </td>
+        </tr>
+    </tbody></table>
+  </div>
+</div>
+</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </details>
+
+    </div>
+  <div id="issuecomment-373549271"
+       class="unminimized-comment comment previewable-edit js-comment js-task-list-container timeline-comment  "
+       data-body-version="9ee83e77d51c3914dfea054494517e54">
+
+    
+<div class="timeline-comment-header clearfix">
+  <div class="timeline-comment-actions">
+    
+
+
+
+
+
+
+
+<!-- Closes div if we are showing the kebab menu -->
+
+  </div>
+
+    
+    <span class="timeline-comment-label text-bold tooltipped tooltipped-multiline tooltipped-s" aria-label="This user is the owner of the material-ui repository.">
+      Owner
+    </span>
+
+
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+    <strong>
+      
+
+  <a href="/oliviertassinari" class="author text-inherit">oliviertassinari</a>
+  
+
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-373549271" class="timestamp"><relative-time datetime="2018-03-15T22:58:11Z">Mar 15, 2018</relative-time></a>
+
+
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<table class="d-block">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p><a class="user-mention" href="https://github.com/youngnicks">@youngnicks</a> A pull-request is very welcome :). We need to update this line as you mentioned it:<br>
+<div class="border rounded-1 my-2">
+  <div class="f6 px-3 py-2 lh-condensed border-bottom bg-gray-light">
+    <p class="mb-0 text-bold">
+      <a href="https://github.com/mui-org/material-ui/blob/c70b518cca49d31d06da29da2a5ed42ff9fee255/src/Dialog/DialogActions.d.ts#L5">material-ui/src/Dialog/DialogActions.d.ts</a>
+    </p>
+    <p class="mb-0 text-gray-light">
+         Line 5
+      in
+      <a data-pjax="true" class="commit-tease-sha" href="/mui-org/material-ui/commit/c70b518cca49d31d06da29da2a5ed42ff9fee255">c70b518</a>
+    </p>
+    </div>
+    <div itemprop="text" class="blob-wrapper blob-wrapper-embedded data">
+    <table class="highlight tab-size mb-0 js-file-line-container" data-tab-size="8">
+
+        <tbody><tr class="border-0">
+          <td id="L5" class="blob-num border-0 px-3 py-0 bg-white js-line-number" data-line-number="5"></td>
+          <td id="LC5" class="blob-code border-0 px-3 py-0 bg-white blob-code-inner js-file-line"> <span class="pl-k">extends</span> <span class="pl-e">StandardProps</span>&lt;<span class="pl-en">React</span>.<span class="pl-en">HTMLAttributes</span>&lt;<span class="pl-en">HTMLDivElement</span>&gt;, <span class="pl-en">DialogActionsClassKey</span>&gt; {} </td>
+        </tr>
+    </tbody></table>
+  </div>
+</div>
+</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+        
+
+<div class="comment-reactions  js-reactions-container "
+
+    >
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+</div>
+
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDM3MzU2MTc5OQ==">
+    
+<div class="timeline-comment-wrapper js-comment-container">
+  
+
+<div class="avatar-parent-child timeline-comment-avatar">
+    <a href="/youngnicks">
+      <img class="avatar rounded-1" height="44" width="44" alt="@youngnicks" src="https://avatars1.githubusercontent.com/u/6864500?s=88&amp;v=4" />
+    </a>
+
+</div>
+
+
+  
+<div class="js-minimizable-comment-group">
+    <div class="minimized-comment d-none">
+      
+
+  <details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="59a292b4ba4cc9e92fb212e5d4cd6be6">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <span class="Details-content--closed text-gray f6"><svg class="octicon octicon-unfold position-relative mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"/></svg>Show comment</span>
+        <span class="Details-content--open text-gray f6"><svg class="octicon octicon-fold position-relative mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z"/></svg>Hide comment</span>
+      </div>
+    </summary>
+    <div class="border-top">
+      <div class="review-comment  previewable-edit js-comment js-task-list-container ">
+        <div class="edit-comment-hide">
+          <div class="timeline-comment-actions">
+
+
+          </div>
+            <a class="float-left mt-1" href="/youngnicks">
+              <img src="https://avatars2.githubusercontent.com/u/6864500?s=56&amp;v=4" width="28" height="28" alt="@youngnicks" class="avatar" />
+            </a>
+          <div class="review-comment-contents">
+            <h4 class="f5 text-normal d-inline text-gray-dark">
+              <strong class="text-gray">
+                
+
+  <a href="/youngnicks" class="author text-inherit">youngnicks</a>
+  
+
+              </strong>
+              <span class="text-gray">
+                  <relative-time datetime="2018-03-16T00:07:58Z">Mar 16, 2018</relative-time>
+              </span>
+            </h4>
+            
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has previously committed to the material-ui repository.">
+      Contributor
+    </span>
+
+            <div class="comment-body markdown-body p-0 pt-1 js-comment-body">
+                <p>Pull-request <a class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="305760249" data-permission-text="Issue title is private" data-url="https://github.com/mui-org/material-ui/issues/10674" href="https://github.com/mui-org/material-ui/pull/10674">#10674</a> has been created.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </details>
+
+    </div>
+  <div id="issuecomment-373561799"
+       class="unminimized-comment comment previewable-edit js-comment js-task-list-container timeline-comment  "
+       data-body-version="59a292b4ba4cc9e92fb212e5d4cd6be6">
+
+    
+<div class="timeline-comment-header clearfix">
+  <div class="timeline-comment-actions">
+    
+
+
+
+
+
+
+
+<!-- Closes div if we are showing the kebab menu -->
+
+  </div>
+
+    
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has previously committed to the material-ui repository.">
+      Contributor
+    </span>
+
+
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+    <strong>
+      
+
+  <a href="/youngnicks" class="author text-inherit">youngnicks</a>
+  
+
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-373561799" class="timestamp"><relative-time datetime="2018-03-16T00:07:58Z">Mar 16, 2018</relative-time></a>
+
+
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<table class="d-block">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Pull-request <a class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="305760249" data-permission-text="Issue title is private" data-url="https://github.com/mui-org/material-ui/issues/10674" href="https://github.com/mui-org/material-ui/pull/10674">#10674</a> has been created.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+        
+
+<div class="comment-reactions  js-reactions-container "
+
+    >
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+</div>
+
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDM3MzU5NjE1OA==">
+    
+<div class="timeline-comment-wrapper js-comment-container">
+  
+
+<div class="avatar-parent-child timeline-comment-avatar">
+    <a href="/rsumner32">
+      <img class="avatar rounded-1" height="44" width="44" alt="@rsumner32" src="https://avatars1.githubusercontent.com/u/37400784?s=88&amp;v=4" />
+    </a>
+
+</div>
+
+
+  
+<div class="js-minimizable-comment-group">
+    <div class="minimized-comment d-none">
+      
+
+  <details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="6ff87095557c988e1a9e644e4947e3c0">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <span class="Details-content--closed text-gray f6"><svg class="octicon octicon-unfold position-relative mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"/></svg>Show comment</span>
+        <span class="Details-content--open text-gray f6"><svg class="octicon octicon-fold position-relative mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 9l3 3H8v3H6v-3H4l3-3zm3-6H8V0H6v3H4l3 3 3-3zm4 2c0-.55-.45-1-1-1h-2.5l-1 1h3l-2 2h-7l-2-2h3l-1-1H1c-.55 0-1 .45-1 1l2.5 2.5L0 10c0 .55.45 1 1 1h2.5l1-1h-3l2-2h7l2 2h-3l1 1H13c.55 0 1-.45 1-1l-2.5-2.5L14 5z"/></svg>Hide comment</span>
+      </div>
+    </summary>
+    <div class="border-top">
+      <div class="review-comment  previewable-edit js-comment js-task-list-container ">
+        <div class="edit-comment-hide">
+          <div class="timeline-comment-actions">
+
+
+          </div>
+            <a class="float-left mt-1" href="/rsumner32">
+              <img src="https://avatars2.githubusercontent.com/u/37400784?s=56&amp;v=4" width="28" height="28" alt="@rsumner32" class="avatar" />
+            </a>
+          <div class="review-comment-contents">
+            <h4 class="f5 text-normal d-inline text-gray-dark">
+              <strong class="text-gray">
+                
+
+  <a href="/rsumner32" class="author text-inherit">rsumner32</a>
+  
+
+              </strong>
+              <span class="text-gray">
+                  <relative-time datetime="2018-03-16T03:55:05Z">Mar 16, 2018</relative-time>
+              </span>
+            </h4>
+            
+
+            <div class="comment-body markdown-body p-0 pt-1 js-comment-body">
+                <p><a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502975-d60856e2-28a3-11e8-9054-25b1f8869c9b.png"><img src="https://user-images.githubusercontent.com/37400784/37502975-d60856e2-28a3-11e8-9054-25b1f8869c9b.png" alt="1a6e8563-f999-47c0-8f85-673683ec297f" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502976-d62691d4-28a3-11e8-9040-2e71ddbdb1ed.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502976-d62691d4-28a3-11e8-9040-2e71ddbdb1ed.jpeg" alt="28b536e0-899e-462e-a923-089fd7885aac" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502977-d63edfaa-28a3-11e8-815c-1a9789a9ab16.png"><img src="https://user-images.githubusercontent.com/37400784/37502977-d63edfaa-28a3-11e8-815c-1a9789a9ab16.png" alt="b4c75cd0-e010-4452-b15e-3bd04622f6af" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502978-d65d67ae-28a3-11e8-8e5c-a76e393bf4ff.png"><img src="https://user-images.githubusercontent.com/37400784/37502978-d65d67ae-28a3-11e8-8e5c-a76e393bf4ff.png" alt="b4814c1e-3ed5-4f97-8bd7-d4f566e22a3b" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502979-d6763df6-28a3-11e8-879d-9e2a0f4e8f73.png"><img src="https://user-images.githubusercontent.com/37400784/37502979-d6763df6-28a3-11e8-879d-9e2a0f4e8f73.png" alt="8faf4271-fb27-49e2-ba35-6e1239100117" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502980-d6940fde-28a3-11e8-98e3-4c587bd2cc96.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502980-d6940fde-28a3-11e8-98e3-4c587bd2cc96.jpeg" alt="5db7f976-0a60-4fe5-8e72-649d7154e0b4" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502981-d6c20c36-28a3-11e8-96ad-347b774ecb72.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502981-d6c20c36-28a3-11e8-96ad-347b774ecb72.jpeg" alt="1bf7231a-0255-491a-857b-76c19603ea94" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502982-d6e1046a-28a3-11e8-8153-be4be4a4c693.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502982-d6e1046a-28a3-11e8-8153-be4be4a4c693.jpeg" alt="8d6e91bc-68aa-45c6-aa81-fa0e6bf63952" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502983-d73ad35a-28a3-11e8-8afa-586f2ea5f830.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502983-d73ad35a-28a3-11e8-8afa-586f2ea5f830.jpeg" alt="9fd841f0-9d5a-4fed-9e45-cb3f4cc35e16" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502984-d7966e7c-28a3-11e8-874e-6b197f975798.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502984-d7966e7c-28a3-11e8-874e-6b197f975798.jpeg" alt="56b34764-2949-4832-96f5-52634ba8e7a1" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502985-d7c1a498-28a3-11e8-8816-959b79a33c11.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502985-d7c1a498-28a3-11e8-8816-959b79a33c11.jpeg" alt="9016dab1-3e45-4a5a-b8ba-06af9e542a12" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502986-d7d8d4b0-28a3-11e8-823a-b721915330a5.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502986-d7d8d4b0-28a3-11e8-823a-b721915330a5.jpeg" alt="551c6355-209b-434d-b94f-7181351a60f2" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502987-d8107578-28a3-11e8-920e-007f16667b19.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502987-d8107578-28a3-11e8-920e-007f16667b19.jpeg" alt="1a266fbd-78a2-4060-9f3a-135dfcb55f49" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502988-d86809a0-28a3-11e8-9abb-cd0cdac22d87.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502988-d86809a0-28a3-11e8-9abb-cd0cdac22d87.jpeg" alt="01d44cdd-9650-4caa-8803-cd8898812cf8" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502989-d88cf152-28a3-11e8-92e2-82c65f0e74ae.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502989-d88cf152-28a3-11e8-92e2-82c65f0e74ae.jpeg" alt="b02afba0-a924-4152-b29d-6f8fce921a60" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502990-d8cb4588-28a3-11e8-8b70-f7d16a06308c.png"><img src="https://user-images.githubusercontent.com/37400784/37502990-d8cb4588-28a3-11e8-8b70-f7d16a06308c.png" alt="0083a666-d86d-45cb-b41a-362bb5495166" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502991-d8f10bb0-28a3-11e8-8fa4-7c929659b8a6.png"><img src="https://user-images.githubusercontent.com/37400784/37502991-d8f10bb0-28a3-11e8-8fa4-7c929659b8a6.png" alt="a199d059-cc39-4167-9eab-74fca3334ed9" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502992-d908eeba-28a3-11e8-8ccf-0a7dd4fd7d52.png"><img src="https://user-images.githubusercontent.com/37400784/37502992-d908eeba-28a3-11e8-8ccf-0a7dd4fd7d52.png" alt="689a1878-8660-487a-8094-0d34a4a6bd3d" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502993-d91f17da-28a3-11e8-990c-93c294a8f226.png"><img src="https://user-images.githubusercontent.com/37400784/37502993-d91f17da-28a3-11e8-990c-93c294a8f226.png" alt="145365b2-9005-4916-b28f-32f0eecb2478" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502994-d9355c52-28a3-11e8-82a8-46557d33113c.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502994-d9355c52-28a3-11e8-82a8-46557d33113c.jpeg" alt="b3f790f7-0c19-457f-96a7-59826f2f7516" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502995-d959b930-28a3-11e8-900e-9cb28bc5e835.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502995-d959b930-28a3-11e8-900e-9cb28bc5e835.jpeg" alt="c7b68c8a-d1e0-4836-810a-e2e4d65a9646" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502996-d974141a-28a3-11e8-8097-fc3b073c0d0d.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502996-d974141a-28a3-11e8-8097-fc3b073c0d0d.jpeg" alt="cf2e916c-6a1b-4415-8136-034387ef66fb" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502997-d9a7b4a0-28a3-11e8-8c70-be6653aceec6.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502997-d9a7b4a0-28a3-11e8-8c70-be6653aceec6.jpeg" alt="a5721c30-9adb-4d1c-a41a-6e7f131334cc" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502998-d9f2484e-28a3-11e8-8daf-830c0720a722.png"><img src="https://user-images.githubusercontent.com/37400784/37502998-d9f2484e-28a3-11e8-8daf-830c0720a722.png" alt="946d5fcf-1621-4514-8783-c09ca2c770a6" style="max-width:100%;"></a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </details>
+
+    </div>
+  <div id="issuecomment-373596158"
+       class="unminimized-comment comment previewable-edit js-comment js-task-list-container timeline-comment  "
+       data-body-version="6ff87095557c988e1a9e644e4947e3c0">
+
+    
+<div class="timeline-comment-header clearfix">
+  <div class="timeline-comment-actions">
+    
+
+
+
+
+
+
+
+<!-- Closes div if we are showing the kebab menu -->
+
+  </div>
+
+    
+
+
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+    <strong>
+      
+
+  <a href="/rsumner32" class="author text-inherit">rsumner32</a>
+  
+
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-373596158" class="timestamp"><relative-time datetime="2018-03-16T03:55:05Z">Mar 16, 2018</relative-time></a>
+
+
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<table class="d-block">
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p><a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502975-d60856e2-28a3-11e8-9054-25b1f8869c9b.png"><img src="https://user-images.githubusercontent.com/37400784/37502975-d60856e2-28a3-11e8-9054-25b1f8869c9b.png" alt="1a6e8563-f999-47c0-8f85-673683ec297f" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502976-d62691d4-28a3-11e8-9040-2e71ddbdb1ed.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502976-d62691d4-28a3-11e8-9040-2e71ddbdb1ed.jpeg" alt="28b536e0-899e-462e-a923-089fd7885aac" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502977-d63edfaa-28a3-11e8-815c-1a9789a9ab16.png"><img src="https://user-images.githubusercontent.com/37400784/37502977-d63edfaa-28a3-11e8-815c-1a9789a9ab16.png" alt="b4c75cd0-e010-4452-b15e-3bd04622f6af" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502978-d65d67ae-28a3-11e8-8e5c-a76e393bf4ff.png"><img src="https://user-images.githubusercontent.com/37400784/37502978-d65d67ae-28a3-11e8-8e5c-a76e393bf4ff.png" alt="b4814c1e-3ed5-4f97-8bd7-d4f566e22a3b" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502979-d6763df6-28a3-11e8-879d-9e2a0f4e8f73.png"><img src="https://user-images.githubusercontent.com/37400784/37502979-d6763df6-28a3-11e8-879d-9e2a0f4e8f73.png" alt="8faf4271-fb27-49e2-ba35-6e1239100117" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502980-d6940fde-28a3-11e8-98e3-4c587bd2cc96.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502980-d6940fde-28a3-11e8-98e3-4c587bd2cc96.jpeg" alt="5db7f976-0a60-4fe5-8e72-649d7154e0b4" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502981-d6c20c36-28a3-11e8-96ad-347b774ecb72.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502981-d6c20c36-28a3-11e8-96ad-347b774ecb72.jpeg" alt="1bf7231a-0255-491a-857b-76c19603ea94" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502982-d6e1046a-28a3-11e8-8153-be4be4a4c693.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502982-d6e1046a-28a3-11e8-8153-be4be4a4c693.jpeg" alt="8d6e91bc-68aa-45c6-aa81-fa0e6bf63952" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502983-d73ad35a-28a3-11e8-8afa-586f2ea5f830.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502983-d73ad35a-28a3-11e8-8afa-586f2ea5f830.jpeg" alt="9fd841f0-9d5a-4fed-9e45-cb3f4cc35e16" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502984-d7966e7c-28a3-11e8-874e-6b197f975798.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502984-d7966e7c-28a3-11e8-874e-6b197f975798.jpeg" alt="56b34764-2949-4832-96f5-52634ba8e7a1" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502985-d7c1a498-28a3-11e8-8816-959b79a33c11.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502985-d7c1a498-28a3-11e8-8816-959b79a33c11.jpeg" alt="9016dab1-3e45-4a5a-b8ba-06af9e542a12" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502986-d7d8d4b0-28a3-11e8-823a-b721915330a5.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502986-d7d8d4b0-28a3-11e8-823a-b721915330a5.jpeg" alt="551c6355-209b-434d-b94f-7181351a60f2" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502987-d8107578-28a3-11e8-920e-007f16667b19.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502987-d8107578-28a3-11e8-920e-007f16667b19.jpeg" alt="1a266fbd-78a2-4060-9f3a-135dfcb55f49" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502988-d86809a0-28a3-11e8-9abb-cd0cdac22d87.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502988-d86809a0-28a3-11e8-9abb-cd0cdac22d87.jpeg" alt="01d44cdd-9650-4caa-8803-cd8898812cf8" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502989-d88cf152-28a3-11e8-92e2-82c65f0e74ae.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502989-d88cf152-28a3-11e8-92e2-82c65f0e74ae.jpeg" alt="b02afba0-a924-4152-b29d-6f8fce921a60" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502990-d8cb4588-28a3-11e8-8b70-f7d16a06308c.png"><img src="https://user-images.githubusercontent.com/37400784/37502990-d8cb4588-28a3-11e8-8b70-f7d16a06308c.png" alt="0083a666-d86d-45cb-b41a-362bb5495166" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502991-d8f10bb0-28a3-11e8-8fa4-7c929659b8a6.png"><img src="https://user-images.githubusercontent.com/37400784/37502991-d8f10bb0-28a3-11e8-8fa4-7c929659b8a6.png" alt="a199d059-cc39-4167-9eab-74fca3334ed9" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502992-d908eeba-28a3-11e8-8ccf-0a7dd4fd7d52.png"><img src="https://user-images.githubusercontent.com/37400784/37502992-d908eeba-28a3-11e8-8ccf-0a7dd4fd7d52.png" alt="689a1878-8660-487a-8094-0d34a4a6bd3d" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502993-d91f17da-28a3-11e8-990c-93c294a8f226.png"><img src="https://user-images.githubusercontent.com/37400784/37502993-d91f17da-28a3-11e8-990c-93c294a8f226.png" alt="145365b2-9005-4916-b28f-32f0eecb2478" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502994-d9355c52-28a3-11e8-82a8-46557d33113c.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502994-d9355c52-28a3-11e8-82a8-46557d33113c.jpeg" alt="b3f790f7-0c19-457f-96a7-59826f2f7516" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502995-d959b930-28a3-11e8-900e-9cb28bc5e835.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502995-d959b930-28a3-11e8-900e-9cb28bc5e835.jpeg" alt="c7b68c8a-d1e0-4836-810a-e2e4d65a9646" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502996-d974141a-28a3-11e8-8097-fc3b073c0d0d.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502996-d974141a-28a3-11e8-8097-fc3b073c0d0d.jpeg" alt="cf2e916c-6a1b-4415-8136-034387ef66fb" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502997-d9a7b4a0-28a3-11e8-8c70-be6653aceec6.jpeg"><img src="https://user-images.githubusercontent.com/37400784/37502997-d9a7b4a0-28a3-11e8-8c70-be6653aceec6.jpeg" alt="a5721c30-9adb-4d1c-a41a-6e7f131334cc" style="max-width:100%;"></a><br>
+<a target="_blank" href="https://user-images.githubusercontent.com/37400784/37502998-d9f2484e-28a3-11e8-8daf-830c0720a722.png"><img src="https://user-images.githubusercontent.com/37400784/37502998-d9f2484e-28a3-11e8-8daf-830c0720a722.png" alt="946d5fcf-1621-4514-8783-c09ca2c770a6" style="max-width:100%;"></a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+        
+
+<div class="comment-reactions  js-reactions-container "
+
+    >
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+</div>
+
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDIwOkNyb3NzUmVmZXJlbmNlZEV2ZW50NjIwOTI3ODE5">
+    <div class="discussion-item">
+        <h3 class="discussion-item-header f5 text-normal" id="ref-pullrequest-305760249">
+      <span class="discussion-item-icon">
+        <svg class="octicon octicon-bookmark" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9 0H1C.27 0 0 .27 0 1v15l5-3.09L10 16V1c0-.73-.27-1-1-1zm-.78 4.25L6.36 5.61l.72 2.16c.06.22-.02.28-.2.17L5 6.6 3.12 7.94c-.19.11-.25.05-.2-.17l.72-2.16-1.86-1.36c-.17-.16-.14-.23.09-.23l2.3-.03.7-2.16h.25l.7 2.16 2.3.03c.23 0 .27.08.09.23h.01z"/></svg>
+      </span>
+        <img src="https://avatars3.githubusercontent.com/u/6864500?s=32&amp;v=4" alt="@youngnicks" height="16" width="16" class="avatar">
+  <a href="/youngnicks" class="author">youngnicks</a>
+  
+
+      referenced this issue
+      <a class="timestamp" href="#ref-pullrequest-305760249">
+        <relative-time datetime="2018-03-16T09:01:55Z">Mar 16, 2018</relative-time>
+      </a>
+    </h3>
+
+  
+    <span class="State State--small ml-1 State--purple float-right" title="State: merged">
+        <svg height="14" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      Merged
+    </span>
+
+
+
+    
+      <h4 class="discussion-item-ref-title">
+        <a href="/mui-org/material-ui/pull/10674" class="title-link">
+          [DialogActions] Add missing TypeScript property
+          <span class="issue-num">#10674</span>
+        </a>
+      </h4>
+    
+
+    
+
+
+  
+
+</div>
+
+</div>
+
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDExOkNsb3NlZEV2ZW50MTUyNTA2MTEzMA==">
+      <div class="discussion-item discussion-item-closed">
+  <h3 class="discussion-item-header f5 text-normal" id="event-1525061130">
+
+    <span class="discussion-item-icon">
+      <svg class="octicon octicon-circle-slash" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm0 1.3c1.3 0 2.5.44 3.47 1.17l-8 8A5.755 5.755 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zm0 11.41c-1.3 0-2.5-.44-3.47-1.17l8-8c.73.97 1.17 2.17 1.17 3.47 0 3.14-2.56 5.7-5.7 5.7z"/></svg>
+    </span>
+
+    
+
+        <img src="https://avatars2.githubusercontent.com/u/3165635?s=32&amp;v=4" alt="@oliviertassinari" height="16" width="16" class="avatar">
+  <a href="/oliviertassinari" class="author">oliviertassinari</a>
+  
+
+
+      
+closed this
+  in
+    <a href="/mui-org/material-ui/pull/10674">#10674</a>
+
+
+    <a href="#event-1525061130" class="timestamp"><relative-time datetime="2018-03-16T09:07:27Z">Mar 16, 2018</relative-time></a>
+
+  </h3>
+</div>
+
+  <div class="closed-banner"></div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Rendered timeline since 2018-03-16 02:07:27 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="issue:305636173"
+      data-url="/mui-org/material-ui/issues/10668/show_partial?partial=issues%2Ftimeline_marker&amp;since=1521191247"
+      data-last-modified="Fri, 16 Mar 2018 09:07:27 GMT">
+
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="d-none js-timeline-marker-form" data-remote="true" action="/mui-org/material-ui/notifications/mark?ids=313659812" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="POtU2YQf08SpbWrJgnqNKLrGSONqG2vFBhH9578jbc2M61NqKgZ2cMx5NRaG6YcNFe2it0nFeRk6iNvrn0RttQ==" />
+</form></div>
+
+
+        </div>
+
+
+        <div class="discussion-timeline-actions">
+                <div class="flash flash-warn mt-3">
+    <a rel="nofollow" class="btn btn-primary" href="/join?source=comment-repo">Sign up for free</a>
+    <strong>to join this conversation on GitHub</strong>.
+    Already have an account?
+    <a rel="nofollow" href="/login?return_to=https%3A%2F%2Fgithub.com%2Fmui-org%2Fmaterial-ui%2Fissues%2F10668">Sign in to comment</a>
+</div>
+
+
+        </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  </div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.66908s from unicorn-3766851748-xslxg">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-terms-of-service/" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to blog, text:blog" href="https://github.com/blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" type="application/javascript" src="https://assets-cdn.github.com/assets/compat-af4f19572e1d43f69746f70aa5f01dc9.js"></script>
+    <script crossorigin="anonymous" type="application/javascript" src="https://assets-cdn.github.com/assets/frameworks-4864edf87c8541242ad2c01d7a701855.js"></script>
+    
+    <script crossorigin="anonymous" async="async" type="application/javascript" src="https://assets-cdn.github.com/assets/github-68a09d5675b3bba5fbb9221e6f7b907a.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+  
+
+  </body>
+</html>
+

@@ -612,7 +612,7 @@ namespace librealsense
         constexpr const char* FISHEYE = "FISHEYE";
         constexpr const char* ACCEL = "ACCLEROMETER"; //Yes, there is a typo, that's how it is saved.
         constexpr const char* GYRO = "GYROMETER";
-        constexpr const char* POSE = "rs_6DoF";
+        constexpr const char* POSE = "rs_6DoF0";
 
         constexpr uint32_t actual_exposure = 0; //    float RS2_FRAME_METADATA_ACTUAL_EXPOSURE
         constexpr uint32_t actual_fps = 1; //    float
